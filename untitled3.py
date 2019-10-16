@@ -1,0 +1,15 @@
+day=1
+month=2
+year=1582
+a=(14-month)//12
+year=year-a
+month=month+12*a-2
+day1=(day*(31*month))//12+year//4+year//100+year//400
+if day1//1=0:
+elif day1//1=1:
+elif day1//1=2
+elif day1//1=3
+elif day1//1=4
+elif day1//1=5
+elif day1//1=6   
+ elif day1//1=7   
