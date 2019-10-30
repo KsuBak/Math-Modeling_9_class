@@ -1,5 +1,6 @@
-q=5
-start=1
-stop= 10
-for i in range(start,stop,start):
-    print(q**i, end=' ')
+def massive_func(Ma):
+    """ функцию, которая перемножает все элементы входного массива, подающегося на входвкачествеаргумента"""
+    a=1
+    for i in range (1,len(Ma),1):
+        a=a*Ma[i]
+        print('a')
