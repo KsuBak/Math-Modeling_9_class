@@ -3,4 +3,10 @@ def massive_func(Ma):
     a=1
     for i in range (1,len(Ma),1):
         a=a*Ma[i]
-        print('a')
+        print(a)
+    print('---------------')
+    return a
+
+
+x = [1, 2, 3, 4]
+print(massive_func(x))
