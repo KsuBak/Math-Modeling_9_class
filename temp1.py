@@ -1,0 +1,26 @@
+import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib.animation import ArtistAnimation
+
+fig = plt.figure()
+
+a = 3
+
+
+x = np.linspace(-5, 5, 100)
+y = a*x**2
+
+anim_list=[]
+
+for i in range(len(x)):
+    point, = plt.plot(x[i], y[i], 'o')
+    lane, =plt.plot(x[:i], y[:i], '-', color='r')
+    anim_list.append([point, lane])
+
+
+ani = ArtistAnimation(fig, anim_list, interval=100)
+ani.save('hj.gif')
+    
+    
+     
+
